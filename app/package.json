@@ -1,0 +1,26 @@
+{
+  "name": "dba-homework",
+  "version": "1.0.0",
+  "description": "### Senario Mike is working on creating a new microservice. Soon, it is expected to monitor the 24 orbital planes and 53 degree inclination of five Starlink satelites. However, today it is in it's infancy and they just finished creating the connection to the database. With the principal of small iterative steps, they want to get this deployed.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pagerinc/dba-homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pagerinc/dba-homework/issues"
+  },
+  "homepage": "https://github.com/pagerinc/dba-homework#readme",
+  "dependencies": {
+    "fastify": "^4.2.1",
+    "knex": "^2.1.0",
+    "mongodb": "^4.8.0",
+    "pg": "^8.7.3"
+  }
+}
