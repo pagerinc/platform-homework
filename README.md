@@ -13,14 +13,16 @@ You will need the following tools:
 - helm - There are public helm charts for postgres or mongodb that you will need to setup and run.
 
 ### Ask
-1. Create a new namespace inside your cluster.
-1. Create the docker container that will run in kubernetes and connection to the database
-    - Application and Dockerfile are all set up. Simple create and tag the docker image.
+1. Create a new namespace inside your local kubernetes cluster.
 1. Install one of the databases of your choice with helm (postgres or mongodb) inside your namespace.
     - Recommended charts:
     - https://github.com/helm/charts/tree/master/stable/postgresql
     - https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+1. Create the docker container for the application that will run in kubernetes and connection to the database.
+    - Application and Dockerfile are all set up. Simple create and tag the docker image.
 1. Create a deployment with 2 replicas with the docker container and run in inside your namespace.
+    - Ensure that your deployment has the necessary envars to connect the application to your database.
+    - Ensure that your deployment has a liveness and readyness check configured to test the healthcheck endpoint.
 
 ### Thinks we don't care about
 - HA - Don't kill yourself here, a single database instance will do.
@@ -32,8 +34,8 @@ Simplicity is key. Come to impress but don't overthink it.
 1. What overrides in your values or manifest file did you choose to deploy with your database helm chart.
 1. How did you create and manage your deployment?
     - Helm chart, kustomization or simple yaml is acceptable.
-1. How did you configure the healthchecks on your deployment?
-1. How would you allow traffic to reach your workloads (pods)?
+1. How did you configure the healthchecks on the application deployment?
+1. How would you allow traffic to reach your application workloads (pods)?
   - Simply talk us though what you would do.
 1. Was there any mis-configurations that you had to work though during this project?
 
