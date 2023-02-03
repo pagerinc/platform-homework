@@ -40,4 +40,4 @@ Simplicity is key. Come to impress but don't overthink it.
 1. Was there any mis-configurations that you had to work though during this project?
 
 ### Questions?
-You can reach out with questions to ![email address image](https://github.com/pagerinc/dba-homework/raw/master/email-address-image.gif)
+You can reach out with questions to ![email address image](https://github.com/pagerinc/platform-homework/raw/master/email-address-image.gif)
