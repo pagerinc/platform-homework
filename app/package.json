@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/pagerinc/dba-homework#readme",
   "dependencies": {
-    "fastify": "^4.2.1",
+    "fastify": "^4.10.2",
     "knex": "^2.4.0",
     "mongodb": "^4.8.0",
     "pg": "^8.7.3"
